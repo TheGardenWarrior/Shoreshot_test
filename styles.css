@@ -130,15 +130,15 @@ a {
 
 #intro {
     background-color: #f4f4f4;
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
-    border-bottom: 4px solid #262626;
+    /*border-bottom: 4px solid #262626;*/
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #intro h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #262626;
     font-weight: 700;
     text-transform: uppercase;
@@ -157,6 +157,66 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f9f9f9;
+}
+
+.work{
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    background-color: #4a9da5;
+}
+
+.work ul {
+    overflow: hidden;
+    padding: 10px;
+    width: 90%;
+    
+}
+
+.work li {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 10px 30px;
+    box-shadow: 0 15px 37px rgba(0, 0, 0, 0.5);
+    border: 5px solid white;
+    border-radius: 5px; /* top-left, top-right, bottom-right, bottom-left */
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.intro_li_photo{
+    max-width: 40%;
+}
+
+
+.work img {
+    height: auto;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    border-radius: 10px /* top-left, top-right, bottom-right, bottom-left */
+}
+
+.work li h3 {
+    font-size: 3em;
+}
+
+.work_text_right {
+    width: 60%;
+    padding: 0 10px 10px 10px;
+}
+
+@media (max-width: 768px){
+    .work img {
+        display: none;
+    }
+    
+    .work_text_right{
+        width: 100%;
+    }
+    
 }
 
 .contact-section {
