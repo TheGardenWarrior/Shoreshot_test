@@ -2,10 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>ShoreShot</title>
+        <title>ShoreShot | Brighton-Based Professional Renovations &amp; Design</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="ShoreShot is a Brighton-based two-man team offering professional renovation and design services. Explore our portfolio and get in touch!">
+
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="Shoreshot" />
+        <meta
+            property="og:description"
+            content="Shoreshot Ltd is a small construction business that operates within the Brighton and Hove Area." />
+        <meta property="og:image" content="https://shoreshot.uk/images/preview-image.jpg" />
+        <meta property="og:url" content="https://shoreshot.uk" />
+        <meta property="og:type" content="website" />
+
+        <!-- Optionally, you can specify the Facebook app ID -->
+        <!-- <meta property="fb:app_id" content="YOUR_APP_ID"> -->
+
+        <!-- Twitter Card meta tags (optional for Twitter preview) -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shoreshot - Your Website Title" />
+        <meta name="twitter:description" content="Shoreshot Ltd is a small construction business that operates within the Brighton and Hove Area." />
+        <meta name="twitter:image" content="https://shoreshot.uk/images/preview-image.jpg" />
     </head>
     <body>
         <header>
@@ -37,11 +56,13 @@
             </nav>
         </header>
         <div class="spacer"></div>
-        
+
         <div class="logo_holder">
             <img id="logo_intro" src="images/logo.png" />
         </div>
+        <h1> Brighton Renovation Specialists for Functional, Stylish Homes.</h1>
         <div id="intro">
+          
             <h2>Introduction</h2>
             <p>
                 Shoreshot is a small two-man team based in and around Brighton. We take on all kinds of work and always
@@ -51,37 +72,58 @@
 
         <div class="work">
             <ul>
-                <li><!-- The first of the listed available works -->
-                    <div class="intro_li_photo"><img src="images/Kitchen_stock.jpg" /></div>
+                <li>
+                    <!-- The first of the listed available works -->
+                    
                     <div class="work_text_right">
                         <h3>Kitchens</h3>
-                        <p>Our team creates beautiful and practical kitchens that suit both modern lifestyles and traditional tastes. We offer bespoke kitchen design and installation, whether you're looking for a sleek, modern look or a cozy, rustic feel. From layout planning to final touches, we deliver high-quality craftsmanship for a kitchen that fits perfectly with your home.</p>
+                        <div class="intro_li_photo"><img src="images/Kitchen_01.png" /></div>
+                        <p>
+                            Our team creates beautiful and practical kitchens that suit both modern lifestyles and
+                            traditional tastes. We offer bespoke kitchen design and installation, whether you're looking
+                            for a sleek, modern look or a cozy, rustic feel. From layout planning to final touches, we
+                            deliver high-quality craftsmanship for a kitchen that fits perfectly with your home.
+                        </p>
                     </div>
                 </li>
-                <li><!-- The second of the listed available works -->
+                <li>
+                    <!-- The second of the listed available works -->
                     <div class="work_text_right">
                         <h3>Bathrooms</h3>
-                        <p>We specialize in designing and fitting stylish and functional bathrooms, from full renovations to minor upgrades. Whether it's a contemporary wet room, a classic bathroom suite, or a complete transformation, we ensure every detail is tailored to your needs and budget. Quality materials, expert installation, and meticulous attention to detail are our top priorities.</p>
+                        <div class="intro_li_photo"><img src="images/Bathroom_02.jpg" /></div>
+                        <p>
+                            We specialize in designing and fitting stylish and functional bathrooms, from full
+                            renovations to minor upgrades. Whether it's a contemporary wet room, a classic bathroom
+                            suite, or a complete transformation, we ensure every detail is tailored to your needs and
+                            budget. Quality materials, expert installation, and meticulous attention to detail are our
+                            top priorities.
+                        </p>
                     </div>
-                    <div class="intro_li_photo"><img src="images/Bathroom_stock.jpg" /></div>
+                    
                 </li>
-                <li><!-- The third of the listed available works -->
-                    <div class="intro_li_photo"><img src="images/Construction-stock-image.jpg" /></div>
+                <li>
+                    <!-- The third of the listed available works -->
                     <div class="work_text_right">
                         <h3>Tailored Solutions</h3>
-                        <p>At Shoreshot Ltd, we specialize in delivering tailored solutions to overcome any construction challenge. Whether it's overcoming design limitations, addressing structural issues, or reimagining spaces to fit your needs, our experienced team provides innovative, cost-effective answers. We take pride in transforming obstacles into opportunities, ensuring your project runs smoothly from start to finish, with results that meet your exact specifications.</p>
+                        <div class="intro_li_photo"><img src="images/Bed_frame_01.jpg" /></div>
+                        <p>
+                            At Shoreshot Ltd, we specialize in delivering tailored solutions to overcome any
+                            construction challenge. Whether it's overcoming design limitations, addressing structural
+                            issues, or reimagining spaces to fit your needs, our experienced team provides innovative,
+                            cost-effective answers. We take pride in transforming obstacles into opportunities, ensuring
+                            your project runs smoothly from start to finish, with results that meet your exact
+                            specifications.
+                        </p>
                     </div>
                 </li>
-                
-                 <li class="contact_link"><!-- The third of the listed available works -->
-                    <div class="intro_li_photo"><img src="images/Construction-stock-image.jpg" /></div>
+
+                <li id="contact_link">
+                    <!-- The third of the listed available works -->
                     <div class="work_text_right">
                         <a href="contact.html"><h3>Get in touch!</h3></a>
-                        <p>We offer free quotes on all the above and more, please get in touch to book in with us. </p>
+                        <p>We offer free quotes on all the above and more, please get in touch to book in with us.</p>
                     </div>
                 </li>
-                
-                
             </ul>
         </div>
 
@@ -94,7 +136,5 @@
             </div>
         </footer>
 
-        <!-- Add Font Awesome -->
-        <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
     </body>
 </html>

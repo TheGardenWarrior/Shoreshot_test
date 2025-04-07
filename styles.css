@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: auto 0; /* Optional if you have a fixed nav */
+}
+
 header {
     position: fixed;
     background-color: #08383d;
@@ -108,7 +113,8 @@ a {
     .nav_footer {
         padding: 10px 0;
         width: 100%;
-        height: 50px;
+        height: 7
+            600px;
         display: block;
         justify-content: center;
         color: #ffffff;
@@ -140,15 +146,21 @@ a {
 
 #intro {
     background-color: #f4f4f4;
-    padding: 30px 20px;
+    padding: 15px 20px;
     text-align: center;
     /*border-bottom: 4px solid #262626;*/
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    padding:10px 20px;
+    text-align: center;
+    background-color: #134e54;
+    color: white;
 }
 
 #intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 0;
     color: #262626;
     font-weight: 700;
     text-transform: uppercase;
@@ -160,7 +172,7 @@ a {
     max-width: 700px;
     margin: 0 auto;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 body {
@@ -181,6 +193,11 @@ body {
     overflow: hidden;
     padding: 10px;
     width: 90%;
+    max-width:1200px;
+}
+
+.intro_li_photo {
+    width:100%;
 }
 
 .work li {
@@ -193,37 +210,51 @@ body {
     border-radius: 5px; /* top-left, top-right, bottom-right, bottom-left */
     background-color: #f9f9f9;
     overflow: hidden;
-}
-
-.intro_li_photo {
-    max-width: 40%;
+    justify-content: center;
 }
 
 .work img {
-    height: auto;
+    display: flex;
+    height: 500px;
+    margin: auto;
     padding: 5px;
-    display: block;
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px; /* top-left, top-right, bottom-right, bottom-left */
 }
 
 .work li h3 {
     font-size: 2.5em;
+    padding-left: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .work_text_right {
-    width: 60%;
     padding: 0 10px 10px 10px;
+    width:90%;
 }
 
-.contact_link .work_text_right {
+.work_text_right  p {
+    padding-top: 0.5rem;
+}
+
+#contact_link .work_text_right {
     padding: 10px;
 }
 
-.contact_link h3 {
-    color: #08383d;
+#contact_link {
+    background-color: #134e54;
+}
+
+#contact_link h3 {
+    color: #fff;
     text-decoration: underline;
     text-align: center;
+}
+
+#contact_link p {
+    text-align: center;
+    color: #fff;
 }
 
 .disclaimer {
@@ -243,12 +274,25 @@ body {
         margin: 12px 10px;
     }
 
+    .work li h3 {
+        padding-left: 0; 
+        text-align: left;
+    }
+    
+    #contact_link {
+        text-align: center;
+    }
+    
     .work_text_right {
         width: 100%;
     }
 
-    .contact_link p {
+    #contact_link p {
         display: none;
+    }
+    
+    h1 {
+            border-radius: 0 0 25px 25px
     }
 }
 
@@ -451,8 +495,8 @@ body {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 0.75rem;
 }
 
 .portfolio-item {
@@ -463,11 +507,11 @@ body {
 }
 
 .portfolio-item .content {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .portfolio-item .container {
-    padding: 2rem;
+    padding: 0.5rem;
     max-height: 20rem;
     padding-bottom: 0;
 }
@@ -493,6 +537,7 @@ body {
 }
 
 .slider img {
+    height: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
@@ -513,8 +558,8 @@ body {
 }
 
 .slider-nav a {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: white;
     opacity: 0.75;
